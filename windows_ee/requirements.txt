@@ -1,0 +1,6 @@
+pywinrm
+dnspython >= 2.0.0
+dpapi-ng
+krb5
+pyspnego[kerberos] >= 0.8.0
+sansldap

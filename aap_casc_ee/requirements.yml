@@ -1,0 +1,16 @@
+---
+collections:
+  - name: ansible.platform
+  - name: ansible.hub
+  - name: ansible.controller
+    version: 4.5.5
+  - name: ansible.eda
+  - name: ansible.receptor
+  - name: infra.aap_configuration
+  - name: infra.aap_configuration_extended
+  - name: infra.aap_utilities
+  - name: infra.ah_configuration
+  - name: infra.controller_configuration
+  - name: infra.eda_configuration
+  - name: infra.ee_utilities
+...

@@ -1,0 +1,40 @@
+---
+version: 3
+
+build_arg_defaults:
+  ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: "--pre -c -v"
+  PKGMGR_PRESERVE_CACHE: "always"
+
+dependencies:
+  python_interpreter:
+    package_system: "python3.11"
+    python_path: "/usr/bin/python3.11"
+  galaxy: requirements.yml
+    #  python: requirements.txt
+  system: bindep.txt
+
+images:
+  base_image:
+    name: production-aap.apps.ocp.bk.lab/ansible-automation-platform-25/ee-minimal-rhel9:latest
+
+options:
+  package_manager_path: /usr/bin/microdnf
+
+additional_build_files:
+  - src: files/ansible.cfg
+    dest: configs
+  - src: files/install-opentofu.sh
+    dest: scripts 
+
+additional_build_steps:
+  prepend_base:
+    - RUN $PYCMD -m pip install --upgrade pip setuptools
+  append_base: |
+    RUN $PKGMGR install -y git
+    RUN /usr/bin/curl https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo | /usr/bin/tee /etc/yum.repos.d/terraform.repo
+    RUN $PKGMGR install -y terraform
+    COPY _build/scripts/install-opentofu.sh /tmp/install-opentofu.sh
+    RUN chmod +x /tmp/install-opentofu.sh && /tmp/install-opentofu.sh --install-method standalone && rm /tmp/install-opentofu.sh
+  prepend_galaxy:
+    - COPY _build/configs/ansible.cfg /etc/ansible/ansible.cfg
+...
