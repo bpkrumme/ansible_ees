@@ -1,0 +1,4 @@
+gcc [platform:rpm]
+python3.11-devel [platform:rpm]
+openssh-clients [platform:rpm]
+python3.11-cryptography [platform:rpm]
