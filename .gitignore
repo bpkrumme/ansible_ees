@@ -1,3 +1,5 @@
 ansible.cfg
 bklabca.pem
 context
+*.rpm
+ansible-navigator.log
