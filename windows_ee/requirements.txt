@@ -4,3 +4,4 @@ dpapi-ng
 krb5
 pyspnego[kerberos] >= 0.8.0
 sansldap
+packaging

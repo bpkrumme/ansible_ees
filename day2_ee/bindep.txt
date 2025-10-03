@@ -1,1 +1,2 @@
+openssh-clients [platform:rpm]
 python3-requests

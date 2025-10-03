@@ -1,4 +1,7 @@
 gcc [platform:rpm]
 python3.11-devel [platform:rpm]
 openssh-clients [platform:rpm]
+systemd-libs [platform:rpm]
+systemd-devel [platform:rpm]
+libxml2-devel [platform:rpm]
 python3.11-cryptography [platform:rpm]

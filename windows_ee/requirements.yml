@@ -1,8 +1,60 @@
 ---
 collections:
+  - amazon.aws
+  - ansible.controller
+  - ansible.eda
+  - ansible.hub
+  - ansible.netcommon
+  - ansible.platform
+  - ansible.posix
+  - ansible.scm
+  - ansible.security
+  - ansible.snmp
+  - ansible.utils
   - ansible.windows
+  - ansible.yang
+  - arista.eos
+  - azure.azcollection
   - chocolatey.chocolatey
+  - cisco.asa
+  - cisco.ios
+  - cisco.iosxr
+  - cisco.nxos
+  - cloud.common
+  - cloud.terraform
   - community.windows
+  - frr.frr
+  - ibm.qradar
+  - junipernetworks.junos
+  - kubernetes.core
   - microsoft.ad
   - microsoft.iis
   - microsoft.sql
+  - openvswitch.openvswitch
+  - oracle.oci
+  - redhat.amq_broker
+  - redhat.amq_streams
+  - redhat.data_grid
+  - redhat.eap
+  - redhat.insights
+  - redhat.jbcs
+  - redhat.jws
+  - redhat.openshift
+  - redhat.openshift_virtualization
+  - redhat.redhat_csp_download
+  - redhat.rhbk
+  - redhat.rhel_idm
+  - redhat.rhel_system_roles
+  - redhat.rhv
+  - redhat.runtimes_common
+  - redhat.sap_install
+  - redhat.satellite
+  - redhat.satellite_operations
+  - redhat.sso
+  - sap.sap_operations
+  - servicenow.itsm
+  - splunk.es
+  - trendmicro.deepsec
+  - vmware.vmware
+  - vmware.vmware_rest
+  - vyos.vyos

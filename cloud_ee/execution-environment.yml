@@ -9,32 +9,40 @@ dependencies:
   python_interpreter:
     package_system: "python3.11"
     python_path: "/usr/bin/python3.11"
+  ansible_core:
+    package_pip: ansible-core~=2.18,<2.19
+  ansible_runner:
+    package_pip: ansible-runner
   galaxy: requirements.yml
-    #  python: requirements.txt
+  python: requirements.txt
   system: bindep.txt
 
 images:
   base_image:
-    name: production-aap.apps.ocp.bk.lab/ansible-automation-platform-25/ee-minimal-rhel9:latest
+    name: registry.redhat.io/ubi9/ubi:latest
 
 options:
-  package_manager_path: /usr/bin/microdnf
+  package_manager_path: /usr/bin/dnf
 
 additional_build_files:
   - src: files/ansible.cfg
     dest: configs
+  - src: files/bklabca.pem
+    dest: certs
   - src: files/install-opentofu.sh
     dest: scripts 
 
 additional_build_steps:
-  prepend_base:
-    - RUN $PYCMD -m pip install --upgrade pip setuptools
   append_base: |
-    RUN $PKGMGR install -y git
+    RUN $PKGMGR install -y git unzip
     RUN /usr/bin/curl https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo | /usr/bin/tee /etc/yum.repos.d/terraform.repo
     RUN $PKGMGR install -y terraform
     COPY _build/scripts/install-opentofu.sh /tmp/install-opentofu.sh
     RUN chmod +x /tmp/install-opentofu.sh && /tmp/install-opentofu.sh --install-method standalone && rm /tmp/install-opentofu.sh
   prepend_galaxy:
-    - COPY _build/configs/ansible.cfg /etc/ansible/ansible.cfg
+    - ADD _build/configs/ansible.cfg /etc/ansible/ansible.cfg
+    - ADD _build/certs/bklabca.pem /etc/pki/ca-trust/source/anchors/bklabca.pem
+    - RUN update-ca-trust
+  append_final:
+    - RUN rm -f /etc/ansible/ansible.cfg
 ...

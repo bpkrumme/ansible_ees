@@ -1,32 +1,39 @@
 ---
 version: 3
 
-build_arg_defaults:
-  ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: "--pre -c -v"
-  PKGMGR_PRESERVE_CACHE: "always"
+images:
+  base_image:
+    name: registry.redhat.io/ubi9/ubi:latest
 
 dependencies:
   python_interpreter:
     package_system: "python3.11"
     python_path: "/usr/bin/python3.11"
+  ansible_core:
+    package_pip: ansible-core~=2.18,<2.19
+  ansible_runner:
+    package_pip: ansible-runner
   galaxy: requirements.yml
-  python: requirements.txt
   system: bindep.txt
-
-images:
-  base_image:
-    name: production-aap.apps.ocp.bk.lab/ansible-automation-platform-25/ee-minimal-rhel9:latest
-
-options:
-  package_manager_path: /usr/bin/microdnf
 
 additional_build_files:
   - src: files/ansible.cfg
     dest: configs
+  - src: files/bklabca.pem
+    dest: certs
 
 additional_build_steps:
-  prepend_base:
-    - RUN $PYCMD -m pip install --upgrade pip setuptools
+  prepend_builder:
+    - ENV PKGMGR_OPTS="--nodocs --setopt=install_weak_deps=0 --setopt=rhocp-4.19-for-rhel-9-x86_64-rpms.enabled=true"
+  prepend_final:
+    - ENV PKGMGR_OPTS="--nodocs --setopt=install_weak_deps=0 --setopt=rhocp-4.19-for-rhel-9-x86_64-rpms.enabled=true"
   prepend_galaxy:
-    - COPY _build/configs/ansible.cfg /etc/ansible/ansible.cfg
-...
+    - ADD _build/configs/ansible.cfg /etc/ansible/ansible.cfg
+    - ADD _build/certs/bklabca.pem /etc/pki/ca-trust/source/anchors/bklabca.pem
+    - RUN update-ca-trust
+  append_final:
+    - RUN rm -f /etc/ansible/ansible.cfg
+
+options:
+  package_manager_path: /usr/bin/dnf
+
