@@ -1,4 +1,5 @@
-ansible.cfg
+
+*ansible.cfg
 bklabca.pem
 context
 *.rpm
