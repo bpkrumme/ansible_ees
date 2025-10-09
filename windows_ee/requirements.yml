@@ -1,60 +1,94 @@
 ---
 collections:
-  - amazon.aws
-  - ansible.controller
-  - ansible.eda
-  - ansible.hub
-  - ansible.netcommon
-  - ansible.platform
-  - ansible.posix
-  - ansible.scm
-  - ansible.security
-  - ansible.snmp
-  - ansible.utils
-  - ansible.windows
-  - ansible.yang
-  - arista.eos
-  - azure.azcollection
-  - chocolatey.chocolatey
-  - cisco.asa
-  - cisco.ios
-  - cisco.iosxr
-  - cisco.nxos
-  - cloud.common
-  - cloud.terraform
-  - community.windows
-  - frr.frr
-  - ibm.qradar
-  - junipernetworks.junos
-  - kubernetes.core
-  - microsoft.ad
-  - microsoft.iis
-  - microsoft.sql
-  - openvswitch.openvswitch
-  - oracle.oci
-  - redhat.amq_broker
-  - redhat.amq_streams
-  - redhat.data_grid
-  - redhat.eap
-  - redhat.insights
-  - redhat.jbcs
-  - redhat.jws
-  - redhat.openshift
-  - redhat.openshift_virtualization
-  - redhat.redhat_csp_download
-  - redhat.rhbk
-  - redhat.rhel_idm
-  - redhat.rhel_system_roles
-  - redhat.rhv
-  - redhat.runtimes_common
-  - redhat.sap_install
-  - redhat.satellite
-  - redhat.satellite_operations
-  - redhat.sso
-  - sap.sap_operations
-  - servicenow.itsm
-  - splunk.es
-  - trendmicro.deepsec
-  - vmware.vmware
-  - vmware.vmware_rest
-  - vyos.vyos
+  - name: amazon.aws
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: ansible.netcommon
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: ansible.platform
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: ansible.posix
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: ansible.scm
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: ansible.security
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: ansible.snmp
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: ansible.utils
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: ansible.windows
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: ansible.yang
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: azure.azcollection
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: chocolatey.chocolatey
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: cloud.common
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: cloud.terraform
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: community.windows
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/community/
+  - name: ibm.qradar
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: kubernetes.core
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: microsoft.ad
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: microsoft.iis
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: microsoft.sql
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: oracle.oci
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/community/
+  - name: redhat.amq_broker
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.amq_streams
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.data_grid
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.eap
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.insights
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.jbcs
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.jws
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.openshift
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.openshift_virtualization
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.redhat_csp_download
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.rhbk
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.rhel_idm
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.rhel_system_roles
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.runtimes_common
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.sap_install
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.satellite
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.satellite_operations
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.sso
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: sap.sap_operations
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: servicenow.itsm
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: splunk.es
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: trendmicro.deepsec
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: vmware.alb
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: vmware.vmware
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: vmware.vmware_rest
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/

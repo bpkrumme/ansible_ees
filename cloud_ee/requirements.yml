@@ -1,4 +1,7 @@
 collections:
   - name: amazon.aws
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: cloud.terraform
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: hashicorp.terraform
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/

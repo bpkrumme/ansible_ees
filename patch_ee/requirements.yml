@@ -1,0 +1,6 @@
+---
+collections:
+  - name: ansible.windows
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: community.general
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/community/

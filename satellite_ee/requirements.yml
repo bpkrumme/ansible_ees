@@ -1,8 +1,14 @@
 ---
 collections:
-  - ansible.posix
-  - ansible.utils
-  - redhat.rhel_system_roles
-  - redhat.satellite
-  - redhat.satellite_operations
-  - redhat.insights
+  - name: ansible.posix
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: ansible.utils
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.rhel_system_roles
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.satellite
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.satellite_operations
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
+  - name: redhat.insights
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/

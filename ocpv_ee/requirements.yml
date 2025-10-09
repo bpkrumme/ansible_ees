@@ -1,4 +1,7 @@
 collections:
   - name: kubernetes.core
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: redhat.openshift
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: redhat.openshift_virtualization
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/

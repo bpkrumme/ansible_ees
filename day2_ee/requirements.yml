@@ -1,11 +1,20 @@
 ---
 collections:
   - name: ansible.posix
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: ansible.utils
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: ansible.windows
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: community.windows
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/community/
   - name: redhat.insights
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: redhat.rhel_idm
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: redhat.rhel_system_roles
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: redhat.satellite
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: redhat.satellite_operations
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/

@@ -1,15 +1,27 @@
 ---
 collections:
   - name: ansible.platform
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: ansible.hub
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: ansible.controller
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: ansible.eda
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: ansible.receptor
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: infra.aap_configuration
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-validated/
   - name: infra.aap_configuration_extended
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-validated/
   - name: infra.aap_utilities
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-validated/
   - name: infra.ah_configuration
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-validated/
   - name: infra.controller_configuration
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-validated/
   - name: infra.eda_configuration
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-validated/
   - name: infra.ee_utilities
+    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-validated/
 ...
