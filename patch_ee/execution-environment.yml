@@ -2,8 +2,7 @@
 version: 3
 
 build_arg_defaults:
-  ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: "--pre -c -v"
-  PKGMGR_PRESERVE_CACHE: "always"
+  ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: "-c -v"
 
 dependencies:
   python_interpreter:
@@ -27,15 +26,11 @@ options:
 additional_build_files:
   - src: files/ansible.cfg
     dest: configs
-  - src: files/bklabca.pem
-    dest: certs
 
 additional_build_steps:
   append_base: |
   prepend_galaxy:
     - ADD _build/configs/ansible.cfg /etc/ansible/ansible.cfg
-    - ADD _build/certs/bklabca.pem /etc/pki/ca-trust/source/anchors/bklabca.pem
-    - RUN update-ca-trust
   append_final:
     - RUN rm -f /etc/ansible/ansible.cfg
 ...
