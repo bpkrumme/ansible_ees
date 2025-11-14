@@ -1,3 +1,4 @@
 awscli2 [platform:rpm]
 python3.11-requests [platform:rpm]
 openssh-clients [platform:rpm]
+sshpass [platform:rpm]
