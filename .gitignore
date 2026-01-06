@@ -4,3 +4,4 @@ bklabca.pem
 context
 *.rpm
 ansible-navigator.log
+certs
