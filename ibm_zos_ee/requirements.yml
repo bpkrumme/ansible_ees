@@ -1,14 +1,8 @@
 ---
 collections:
   - name: ibm.ibm_zhmc
-    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: ibm.ibm_zos_cics
-    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: ibm.ibm_zos_core
-    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: ibm.ibm_zos_ims
-    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: ibm.ibm_zosmf
-    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
   - name: ibm.ibm_zos_sysauto
-    src: https://production-aap.apps.ocp.bk.lab/pulp_ansible/galaxy/rh-certified/
