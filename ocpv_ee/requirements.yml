@@ -1,7 +1,7 @@
 ---
 collections:
   - name: kubernetes.core
-    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/community/
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: redhat.openshift
     source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: redhat.openshift_virtualization
