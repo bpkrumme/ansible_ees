@@ -1,4 +1,8 @@
+---
 collections:
   - name: amazon.aws
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: cloud.terraform
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: hashicorp.terraform
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/

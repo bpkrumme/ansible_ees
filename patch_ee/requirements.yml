@@ -1,5 +1,8 @@
 ---
 collections:
   - name: ansible.windows
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/community/
   - name: community.windows
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/community/
   - name: community.general
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/community/

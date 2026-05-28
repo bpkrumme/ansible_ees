@@ -1,7 +1,12 @@
 ---
 collections:
   - name: redhat.eap
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: redhat.jbcs
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: redhat.jws
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: redhat.runtimes_common
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: ansible.windows
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/community/

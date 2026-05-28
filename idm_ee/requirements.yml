@@ -1,6 +1,10 @@
 ---
 collections:
   - name: ansible.posix
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/community/
   - name: ansible.utils
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/community/
   - name: redhat.rhel_system_roles
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: redhat.rhel_idm
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/

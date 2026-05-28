@@ -1,8 +1,14 @@
 ---
 collections:
   - name: ansible.windows
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/community/
   - name: chocolatey.chocolatey
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: community.windows
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/community/
   - name: microsoft.ad
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: microsoft.iis
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: microsoft.sql
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/

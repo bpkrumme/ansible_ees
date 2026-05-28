@@ -1,15 +1,26 @@
 ---
 collections:
   - name: ansible.platform
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: ansible.hub
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: ansible.controller
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: ansible.eda
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: ansible.receptor
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: infra.aap_configuration
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-validated/
   - name: infra.aap_configuration_extended
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-validated/
   - name: infra.aap_utilities
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-validated/
   - name: infra.ah_configuration
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-validated/
   - name: infra.controller_configuration
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-validated/
   - name: infra.eda_configuration
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-validated/
   - name: infra.ee_utilities
-...
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-validated/

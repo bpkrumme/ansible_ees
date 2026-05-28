@@ -1,7 +1,10 @@
 ---
 collections:
   - name: ansible.netcommon
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/community/
   - name: ansible.snmp
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: ansible.network
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: kenmoini.phpipam
-...
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/community/

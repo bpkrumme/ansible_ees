@@ -1,8 +1,14 @@
 ---
 collections:
   - name: ibm.ibm_zhmc
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: ibm.ibm_zos_cics
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: ibm.ibm_zos_core
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: ibm.ibm_zos_ims
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: ibm.ibm_zosmf
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: ibm.ibm_zos_sysauto
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
