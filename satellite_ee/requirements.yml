@@ -12,3 +12,5 @@ collections:
     source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
   - name: redhat.insights
     source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/rh-certified/
+  - name: community.general
+    source: https://production-aap.apps.ocp.bk.lab/api/galaxy/content/community/
