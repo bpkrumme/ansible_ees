@@ -10,10 +10,10 @@ build_arg_defaults:
 
 dependencies:
   python_interpreter:
-    package_system: "python3.12"
-    python_path: "/usr/bin/python3.12"
+    package_system: "python3.14"
+    python_path: "/usr/bin/python3.14"
   ansible_core:
-    package_pip: ansible-core~=2.18,<2.19
+    package_pip: ansible-core~=2.20,<2.21
   ansible_runner:
     package_pip: ansible-runner
   galaxy: requirements.yml

@@ -1,5 +1,5 @@
 gcc [platform:rpm]
-python3.12-devel [platform:rpm]
+python3.14-devel [platform:rpm]
 python3-packaging [platform:rpm]
 openssh-clients [platform:rpm]
 sshpass [platform:rpm]
